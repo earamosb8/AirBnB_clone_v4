@@ -8,8 +8,8 @@ $(document).ready(function() {
   }
       const values = Object.values(check_list)
       const addlist = values.join(', ')
-      const short = addlist.slice(0, 25)
+      const short = addlist.slice(0, 30)
       $('.amenities h4').text(short + '...')
       if (values.length === 0) $('.amenities h4').html('&nbsp;');
-  })})
+  });
 });
